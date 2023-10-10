@@ -1,4 +1,4 @@
-let teamMembers = ['Harsh','Srujan']
+let teamMembers = ['Harish','Srujan']
 let teamName = 'DVC Team';
 
 module.exports = {
