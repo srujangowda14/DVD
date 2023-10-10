@@ -4,16 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var laptopRouter = require('./main/dvd');
+var dvdRouter = require('./main/dvd');
+var indexRouter = require('./main/index');
 
 var app = express();
 var port= 3030;
 
 app.use(logger('dev'));
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
-
-app.use('/laptops', laptopRouter);
+app.use('/',indexRouter);
+app.use('/dvd', dvdRouter);
 
 app.use(function(req, res, next) {
     next(createError(404));
@@ -27,7 +29,7 @@ app.use(function(err, req, res, next) {
   
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.json('error');
   });
   
 app.listen(port, () => console.log(`DVD app listening on port ${port}!`))
