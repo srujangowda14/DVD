@@ -1,8 +1,8 @@
-let teamMemberNames = ['Harish', 'Srujan'];
-let teamName = "DVDs";
-
+let teamMembers = ['Harish','Srujan']
+let teamName = 'DVC Team';
 
 module.exports = {
     'team': teamName,
-    'membersNames': teamMemberNames
+    'membersNames' : teamMembers
 }
+
