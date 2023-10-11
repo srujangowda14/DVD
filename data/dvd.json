@@ -6,7 +6,7 @@
         "metadata": "drama crime redemption",
         "productId": 101,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
         "taxPercentage": 2,
         "rating": 4.9,
         "timestamp": "01/10/2023"
@@ -18,7 +18,7 @@
         "metadata": "crime drama mafia",
         "productId": 102,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         "taxPercentage": 2.5,
         "rating": 4.8,
         "timestamp": "02/10/2023"
@@ -30,7 +30,7 @@
         "metadata": "crime drama cult",
         "productId": 103,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://i.etsystatic.com/37263606/r/il/cd5641/4158345065/il_570xN.4158345065_hfl9.jpg",
         "taxPercentage": 1.5,
         "rating": 4.7,
         "timestamp": "03/10/2023"
@@ -42,7 +42,7 @@
         "metadata": "superhero action crime",
         "productId": 104,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://rukminim2.flixcart.com/image/850/1000/k8xduvk0/poster/j/m/z/medium-the-dark-knight-poster-decorative-wall-poster-wall-d-cor-original-imafqu8euacqngyh.jpeg?q=20",
         "taxPercentage": 3,
         "rating": 4.9,
         "timestamp": "04/10/2023"
@@ -54,7 +54,7 @@
         "metadata": "drama comedy life",
         "productId": 105,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://www.themoviedb.org/t/p/original/h5J4W4veyxMXDMjeNxZI46TsHOb.jpg",
         "taxPercentage": 2.2,
         "rating": 4.6,
         "timestamp": "05/10/2023"
@@ -66,7 +66,7 @@
         "metadata": "science-fiction thriller mind-bending",
         "productId": 106,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0j0lf_8bNpA0RipmQglCNysaAOdKRI61mKfuaQUI4&s",
         "taxPercentage": 2.8,
         "rating": 4.8,
         "timestamp": "06/10/2023"
@@ -78,7 +78,7 @@
         "metadata": "science-fiction action virtual-reality",
         "productId": 107,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://i.etsystatic.com/23402008/r/il/5c021e/2326618902/il_fullxfull.2326618902_brqu.jpg",
         "taxPercentage": 2.4,
         "rating": 4.7,
         "timestamp": "07/10/2023"
@@ -90,7 +90,7 @@
         "metadata": "fantasy adventure epic",
         "productId": 108,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GLJAV3sDgYetsW4VW2I6oBuVmiYFlXQFFvQaxvrH&s",
         "taxPercentage": 3.5,
         "rating": 4.9,
         "timestamp": "08/10/2023"
@@ -102,7 +102,7 @@
         "metadata": "science-fiction space adventure",
         "productId": 109,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://i.pinimg.com/736x/32/51/e7/3251e748eb24f263e9039de37e277b13.jpg",
         "taxPercentage": 3.2,
         "rating": 4.8,
         "timestamp": "09/10/2023"
@@ -114,7 +114,7 @@
         "metadata": "science-fiction adventure dinosaurs",
         "productId": 110,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://m.media-amazon.com/images/I/610fuvWAaqL._AC_UF894,1000_QL80_.jpg",
         "taxPercentage": 2.6,
         "rating": 4.6,
         "timestamp": "10/10/2023"
@@ -126,7 +126,7 @@
         "metadata": "science-fiction adventure aliens",
         "productId": 111,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://lumiere-a.akamaihd.net/v1/images/avatar_800x1200_208c9665.jpeg?region=0%2C0%2C800%2C1200",
         "taxPercentage": 3.8,
         "rating": 4.9,
         "timestamp": "11/10/2023"
@@ -138,7 +138,7 @@
         "metadata": "drama action ancient-Rome",
         "productId": 112,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJq2BdyyZiGptmI4VcxTa0wdnylB1sPngZdhRFFAl9&s",
         "taxPercentage": 2.1,
         "rating": 4.7,
         "timestamp": "12/10/2023"
@@ -150,7 +150,7 @@
         "metadata": "thriller crime psychological",
         "productId": 113,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
         "taxPercentage": 1.7,
         "rating": 4.8,
         "timestamp": "13/10/2023"
@@ -162,7 +162,7 @@
         "metadata": "drama thriller underground",
         "productId": 114,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://i.etsystatic.com/18242346/r/il/c9908e/2412674268/il_fullxfull.2412674268_1sgm.jpg",
         "taxPercentage": 2.0,
         "rating": 4.6,
         "timestamp": "14/10/2023"
@@ -174,7 +174,7 @@
         "metadata": "animation family musical",
         "productId": 115,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://www.themoviedb.org/t/p/original/AqxziiwYoRH9yQLUxMVHJ6rSt2n.jpg",
         "taxPercentage": 1.8,
         "rating": 4.9,
         "timestamp": "15/10/2023"
@@ -186,7 +186,7 @@
         "metadata": "romance drama shipwreck",
         "productId": 116,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://i.etsystatic.com/23402008/r/il/823d00/2326734906/il_fullxfull.2326734906_keku.jpg",
         "taxPercentage": 2.2,
         "rating": 4.7,
         "timestamp": "16/10/2023"
@@ -198,7 +198,7 @@
         "metadata": "science-fiction adventure time-travel",
         "productId": 117,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://originalvintagemovieposters.com/wp-content/uploads/2022/08/Back-to-the-future-10635LB-scaled.jpg",
         "taxPercentage": 2.0,
         "rating": 4.8,
         "timestamp": "17/10/2023"
@@ -210,7 +210,7 @@
         "metadata": "science-fiction action future",
         "productId": 118,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/b/c/y/small-terminator-55-the-terminator-poster-multicolor-photo-paper-original-imaghhxxrh4vrfc6.jpeg?q=90",
         "taxPercentage": 1.9,
         "rating": 4.6,
         "timestamp": "18/10/2023"
@@ -222,7 +222,7 @@
         "metadata": "animation family toys",
         "productId": 119,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://www.themoviedb.org/t/p/original/p05ZMpMiigegGLqS5XxnmyG15iH.jpg",
         "taxPercentage": 1.6,
         "rating": 4.9,
         "timestamp": "19/10/2023"
@@ -234,7 +234,7 @@
         "metadata": "romance drama war",
         "productId": 120,
         "brand": "MovieMasters",
-        "imageThumbnail": "/assets/dvd.jpg",
+        "imageThumbnail": "https://upload.wikimedia.org/wikipedia/commons/b/b3/CasablancaPoster-Gold.jpg",
         "taxPercentage": 2.4,
         "rating": 4.7,
         "timestamp": "20/10/2023"
