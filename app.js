@@ -8,7 +8,7 @@ var dvdRouter = require('./main/dvd');
 var indexRouter = require('./main/index');
 
 var app = express();
-var port= 3030;
+var port= 3035;
 
 app.use(logger('dev'));
 app.use(express.json());
