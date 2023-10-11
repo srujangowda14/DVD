@@ -75,16 +75,11 @@ router.get('/search',(req,res,next)=>{
     res.json(filteredData);  
 });
 
- 
 
 router.get('/team', function(req, res, next) {
     res.json(team)
 })
 
- 
-
 router.get('/:')
-
- 
 
 module.exports = router;
