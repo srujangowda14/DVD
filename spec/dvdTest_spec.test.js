@@ -38,7 +38,7 @@ describe("Test server for DVDs", () => {
     it("returns all the DVDs", (done) => {
       request.get(baseURL + "all", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].productName).toBe("The Shawshank Redemption");
+        expect(dvdData[0].product_name).toBe("The Shawshank Redemption");
         expect(dvdData.length).toBeGreaterThan(0);
         done();
       });
@@ -51,7 +51,7 @@ describe("Test server for DVDs", () => {
     it("checks the tax percentage and product price in India", (done) => {
       request.get(baseURL + "all/IN", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(18);
+        expect(dvdData[0].tax_percentage).toBe(18);
         expect(dvdData[0].price).toBe(17.7);
         done();
       });
@@ -62,7 +62,7 @@ describe("Test server for DVDs", () => {
     it("checks the tax percentage and product price in Ireland", (done) => {
       request.get(baseURL + "all/IE", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(23);
+        expect(dvdData[0].tax_percentage).toBe(23);
         expect(dvdData[0].price).toBe(18.45);
         done();
       });
@@ -73,7 +73,7 @@ describe("Test server for DVDs", () => {
     it("checks the tax percentage and product price in North Carolina,US", (done) => {
       request.get(baseURL + "all/US-NC", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(8);
+        expect(dvdData[0].tax_percentage).toBe(8);
         expect(dvdData[0].price).toBe(16.2);
         done();
       });
@@ -84,7 +84,7 @@ describe("Test server for DVDs", () => {
     it("checks the filters", (done) => {
       request.get(baseURL + "all/search?minprice=16", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].productName).toBe("The Godfather");
+        expect(dvdData[0].product_name).toBe("The Godfather");
         expect(dvdData.length).toBeGreaterThan(0);
         done();
       });
