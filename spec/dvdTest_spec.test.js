@@ -1,8 +1,12 @@
 let request = require("request");
 
+
 const baseURL = "http://localhost:3035/dvd/";
 
 console.log("Starting dvd_test.js");
+
+
+
 
 describe("Test server for DVDs", () => {
   describe("GET /team", () => {
@@ -12,37 +16,42 @@ describe("Test server for DVDs", () => {
         expect(teamData.team).toBe("DVC Team");
         expect(teamData.membersNames[0]).toBe("Harish");
         expect(teamData.membersNames[1]).toBe("Srujan");
+        expect(resp.statusCode).toBe(200);
         done();
       });
     });
   });
 
+  describe("GET /negative test", () => {
+    it("returns 404 status code", (done) => {
+      request.get(baseURL + "error", (err, resp, body) => {
+        teamData = JSON.parse(body);
+        expect(resp.statusCode).toBe(404);
+        done();
+      });
+    });
+  });
+
+  
+
   describe("GET /all", () => {
     it("returns all the DVDs", (done) => {
       request.get(baseURL + "all", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].productName).toBe("The Shawshank Redemption");
+        expect(dvdData[0].product_name).toBe("The Shawshank Redemption");
         expect(dvdData.length).toBeGreaterThan(0);
         done();
       });
     });
   });
 
-  describe("GET /all/IN", () => {
-    it("checks the tax percentage in India", (done) => {
-      request.get(baseURL + "all/IN", (err, resp, body) => {
-        dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(18);
-        done();
-      });
-    });
-  });
+ 
 
   describe("GET /all/IN", () => {
     it("checks the tax percentage and product price in India", (done) => {
       request.get(baseURL + "all/IN", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(18);
+        expect(dvdData[0].tax_percentage).toBe(18);
         expect(dvdData[0].price).toBe(17.7);
         done();
       });
@@ -53,7 +62,7 @@ describe("Test server for DVDs", () => {
     it("checks the tax percentage and product price in Ireland", (done) => {
       request.get(baseURL + "all/IE", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(23);
+        expect(dvdData[0].tax_percentage).toBe(23);
         expect(dvdData[0].price).toBe(18.45);
         done();
       });
@@ -64,23 +73,23 @@ describe("Test server for DVDs", () => {
     it("checks the tax percentage and product price in North Carolina,US", (done) => {
       request.get(baseURL + "all/US-NC", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].taxPercentage).toBe(8);
+        expect(dvdData[0].tax_percentage).toBe(8);
         expect(dvdData[0].price).toBe(16.2);
         done();
       });
     });
   });
 
-  describe("GET /search?", () => {
-    it("checks the filters for searching the products", (done) => {
-      request.get(
-        baseURL + "search?minprice=10&maxprice=20",
-        (err, resp, body) => {
-          dvdData = JSON.parse(body);
-          expect(dvdData.length).toBeGreaterThan(0);
-          done();
-        }
-      );
+  describe("GET /all/search?", () => {
+    it("checks the filters", (done) => {
+      request.get(baseURL + "all/search?minprice=16", (err, resp, body) => {
+        dvdData = JSON.parse(body);
+        expect(dvdData[0].product_name).toBe("The Godfather");
+        expect(dvdData.length).toBeGreaterThan(0);
+        done();
+      });
     });
   });
+
+  
 });
