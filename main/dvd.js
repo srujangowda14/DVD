@@ -41,7 +41,7 @@ router.get('/all/:location?', function(req, res, next) {
         else if (location === 'US-NC') {
             json_result = computePrice(json_result, 8);
         }else {
-            return res.status(400).json({error: 'Bad Request' });
+            return res.status(400).json();
         }
     }
     const {minprice, maxprice, rating, brand} = req.query;
