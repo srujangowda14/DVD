@@ -82,7 +82,7 @@ describe("Test server for DVDs", () => {
 
   describe("GET /all/search?", () => {
     it("checks the filters", (done) => {
-      request.get(baseURL + "all/search?minprice=16", (err, resp, body) => {
+      request.get(baseURL + "all/?minprice=16", (err, resp, body) => {
         dvdData = JSON.parse(body);
         expect(dvdData[0].product_name).toBe("The Godfather");
         expect(dvdData.length).toBeGreaterThan(0);
