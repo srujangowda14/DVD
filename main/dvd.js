@@ -18,12 +18,12 @@ exports.list = () => {
 function computePrice(json, percent) {
     taxPercentage = percent / 100;
     for (let dvd of json) {
-        console.log(dvd.price);
+        // console.log(dvd.price);
         dvd.price =dvd.price+ ( dvd.price * (taxPercentage));
         dvd.taxPercentage = percent;
-        console.log(dvd.price);
+        // console.log(dvd.price);
     }
-    console.log(json);
+    // console.log(json);
     return json
 }
 
@@ -44,15 +44,9 @@ router.get('/all/:location?', function(req, res, next) {
             console.log('not a valid location');
         }
     }
-    res.json(json_result);
-});
-
-router.get('/search',(req,res,next)=>{
     const {minprice, maxprice, rating, brand} = req.query;
 
-    let jsonResult = JSON.parse(read_json_file());
-
-    const filteredData = jsonResult.filter((dvd) => {
+    const filteredData = json_result.filter((dvd) => {
  
     if (minprice !== undefined && dvd.price < minprice) {
       return false;
@@ -63,6 +57,7 @@ router.get('/search',(req,res,next)=>{
     }
 
     if (rating !== undefined && dvd.rating < rating) {
+        console.log(`rating: ${rating}`)
        return false;
     }
 
@@ -72,7 +67,8 @@ router.get('/search',(req,res,next)=>{
 
     return true;
    });
-    res.json(filteredData);  
+    res.json(filteredData); 
+
 });
 
 
