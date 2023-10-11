@@ -19,7 +19,7 @@ function computePrice(json, percent) {
     taxPercentage = percent / 100;
     for (let dvd of json) {
         console.log(dvd.price);
-        dvd.price =dvd.price+ ( dvd.price * (percent));
+        dvd.price =dvd.price+ ( dvd.price * (taxPercentage));
         dvd.taxPercentage = percent;
         console.log(dvd.price);
     }
@@ -35,7 +35,7 @@ router.get('/all/:location?', function(req, res, next) {
         console.log(`received location: ${location}`);
         if (location === 'IN') {
             json_result = computePrice(json_result, 18);
-        } else if (location === 'IR') {
+        } else if (location === 'IE') {
             json_result = computePrice(json_result, 23);
         } 
         else if (location === 'US-NC') {
