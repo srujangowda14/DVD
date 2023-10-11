@@ -20,7 +20,7 @@ function computePrice(json, percent) {
     for (let dvd of json) {
         // console.log(dvd.price);
         dvd.price =dvd.price+ ( dvd.price * (taxPercentage));
-        dvd.taxPercentage = percent;
+        dvd.tax_percentage = percent;
         // console.log(dvd.price);
     }
     // console.log(json);
