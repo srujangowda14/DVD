@@ -6,12 +6,14 @@ var logger = require('morgan');
 
 var dvdRouter = require('./main/dvd');
 var indexRouter = require('./main/index');
+var cors =  require('cors');
 
 var app = express();
 var port= 3035;
 
 app.use(logger('dev'));
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({extended: false}));
 
 app.use('/',indexRouter);
