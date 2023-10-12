@@ -91,5 +91,14 @@ describe("Test server for DVDs", () => {
     });
   });
 
+  describe("GET /all/wrongCountry",()=>{
+     it("returns a 400 error when there is a bad request",(done)=>{
+      request.get(baseURL + "all/PK",(err,resp,body) => {
+        expect(resp.statusCode).toBe(400);
+        done();
+      })
+     })
+  });
+
   
 });
