@@ -13,7 +13,7 @@ describe("Test server for DVDs", () => {
     it("returns Team Name & Members", (done) => {
       request.get(baseURL + "team", (err, resp, body) => {
         teamData = JSON.parse(body);
-        expect(teamData.team).toBe("DVC Team");
+        expect(teamData.team).toBe("DVD Team");
         expect(teamData.membersNames[0]).toBe("Harish");
         expect(teamData.membersNames[1]).toBe("Srujan");
         expect(resp.statusCode).toBe(200);
@@ -25,7 +25,6 @@ describe("Test server for DVDs", () => {
   describe("GET /negative test", () => {
     it("returns 404 status code", (done) => {
       request.get(baseURL + "error", (err, resp, body) => {
-        teamData = JSON.parse(body);
         expect(resp.statusCode).toBe(404);
         done();
       });
