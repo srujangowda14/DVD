@@ -14,8 +14,8 @@ describe("Test server for DVDs", () => {
       request.get(baseURL + "team", (err, resp, body) => {
         teamData = JSON.parse(body);
         expect(teamData.team).toBe("DVD Team");
-        expect(teamData.membersNames[0]).toBe("Harish");
-        expect(teamData.membersNames[1]).toBe("Srujan");
+        expect(teamData.memberNames[0]).toBe("Harish");
+        expect(teamData.memberNames[1]).toBe("Srujan");
         expect(resp.statusCode).toBe(200);
         done();
       });
@@ -79,11 +79,55 @@ describe("Test server for DVDs", () => {
     });
   });
 
-  describe("GET /all/search?", () => {
+  describe("GET /all/ with filter minprice", () => {
     it("checks the filters", (done) => {
       request.get(baseURL + "all/?minprice=16", (err, resp, body) => {
         dvdData = JSON.parse(body);
         expect(dvdData[0].product_name).toBe("The Godfather");
+        expect(dvdData.length).toBeGreaterThan(0);
+        done();
+      });
+    });
+  });
+
+  describe("GET /all/ with filter maxprice", () => {
+    it("checks the filters", (done) => {
+      request.get(baseURL + "all/?maxprice=100", (err, resp, body) => {
+        dvdData = JSON.parse(body);
+        expect(dvdData[0].product_name).toBe("The Shawshank Redemption");
+        expect(dvdData.length).toBeGreaterThan(0);
+        done();
+      });
+    });
+  });
+
+  describe("GET /all/ with filter rating", () => {
+    it("checks the filters", (done) => {
+      request.get(baseURL + "all/?rating=4.0", (err, resp, body) => {
+        dvdData = JSON.parse(body);
+        expect(dvdData[0].product_name).toBe("Pulp Fiction");
+        expect(dvdData.length).toBeGreaterThan(0);
+        done();
+      });
+    });
+  });
+
+  describe("GET /all/ with filter brand", () => {
+    it("checks the filters", (done) => {
+      request.get(baseURL + "all/?brand=MovieMasters", (err, resp, body) => {
+        dvdData = JSON.parse(body);
+        expect(dvdData[0].product_name).toBe("The Shawshank Redemption");
+        expect(dvdData.length).toBeGreaterThan(0);
+        done();
+      });
+    });
+  });
+
+  describe("GET /all/ with all filters together", () => {
+    it("checks the filters", (done) => {
+      request.get(baseURL + "all/?minprice=18&maxprice=400&rating=4.7&brand=MovieMasters", (err, resp, body) => {
+        dvdData = JSON.parse(body);
+        expect(dvdData[0].product_name).toBe("The Dark Knight");
         expect(dvdData.length).toBeGreaterThan(0);
         done();
       });

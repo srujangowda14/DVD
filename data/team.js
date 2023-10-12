@@ -3,6 +3,6 @@ let teamName = 'DVD Team';
 
 module.exports = {
     'team': teamName,
-    'membersNames' : teamMembers
+    'memberNames' : teamMembers
 }
 

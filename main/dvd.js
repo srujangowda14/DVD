@@ -15,6 +15,18 @@ exports.list = () => {
     return JSON.parse(read_json_file());
 };
 
+exports.compute_price = (json, percent) => {
+    taxPercentage = percent / 100;
+    for (let dvd of json) {
+        // console.log(dvd.price);
+        dvd.price =dvd.price+ ( dvd.price * (taxPercentage));
+        dvd.tax_percentage = percent;
+        // console.log(dvd.price);
+    }
+    // console.log(json);
+    return json
+}
+
 function computePrice(json, percent) {
     taxPercentage = percent / 100;
     for (let dvd of json) {
@@ -78,4 +90,4 @@ router.get('/team', function(req, res, next) {
 
 router.get('/:')
 
-module.exports = router;
+module.exports =  router;
