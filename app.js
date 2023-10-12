@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: false}));
 
 app.use('/',indexRouter);
-app.use('/dvd', dvdRouter);
+app.use('/dvds', dvdRouter);
 
 app.use(function(req, res, next) {
     next(createError(404));

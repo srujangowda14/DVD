@@ -1,5 +1,5 @@
 let teamMembers = ['Harish','Srujan']
-let teamName = 'DVC Team';
+let teamName = 'DVD Team';
 
 module.exports = {
     'team': teamName,

@@ -1,7 +1,7 @@
 let request = require("request");
 
 
-const baseURL = "http://localhost:3035/dvd/";
+const baseURL = "http://localhost:3035/dvds/";
 
 console.log("Starting dvd_test.js");
 
