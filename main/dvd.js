@@ -2,7 +2,7 @@ var express = require('express');
 const fs = require('fs');
 
 
-var team = require('../data/team')
+var team = require('../data/team.js')
 var router = express.Router();
 
  
