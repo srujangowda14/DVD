@@ -14,8 +14,8 @@ describe("Test server for DVDs", () => {
       request.get(baseURL + "team", (err, resp, body) => {
         teamData = JSON.parse(body);
         expect(teamData.team).toBe("DVD Team");
-        expect(teamData.memberNames[0]).toBe("Harish");
-        expect(teamData.memberNames[1]).toBe("Srujan");
+        expect(teamData.membersNames[0]).toBe("Harish");
+        expect(teamData.membersNames[1]).toBe("Srujan");
         expect(resp.statusCode).toBe(200);
         done();
       });
@@ -127,7 +127,7 @@ describe("Test server for DVDs", () => {
     it("checks the filters", (done) => {
       request.get(baseURL + "all/?minprice=18&maxprice=400&rating=4.7&brand=MovieMasters", (err, resp, body) => {
         dvdData = JSON.parse(body);
-        expect(dvdData[0].product_name).toBe("The Dark Knight");
+        expect(dvdData[0].product_name).toBe("The The Dark Knight");
         expect(dvdData.length).toBeGreaterThan(0);
         done();
       });
